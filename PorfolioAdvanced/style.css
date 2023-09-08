@@ -62,10 +62,11 @@ button{
     /* background-color: #255957;
     border: transparent; */
     background-color: #B87D4B;
-    border: solid 1px #97683e;
+    /* border: solid 1px #97683e; */
+    border:transparent;
     padding: 8px;
     border-radius: 8px;
-    
+    font-size: 25px;
 }
 
 button:active{
@@ -83,15 +84,26 @@ button:active{
     display:flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .listno{
     flex:1;
+    opacity: 0;
+    animation: fadeIn 2s;
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+
 }
 
 .listit{
     flex:1;
-    
+    opacity: 0;
+    animation: fadeIn 2s;
+    -webkit-animation-delay: 2600ms;
+    animation-delay: 2600ms;
+    animation-fill-mode: forwards;
 }
 
 .listnot{
@@ -116,11 +128,16 @@ button:active{
     align-items: center;
     /* transition: opacity 0.5s ease-in-out;
     opacity: 0; */
-    animation: fadeIn 10s;
+    opacity: 0;
+    animation: fadeIn 3s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+
   }
 
 .namep{
@@ -151,25 +168,66 @@ main{
 }
 
 
-.mainHead{
+.mainHead--one{
     font-size: 32px;
     font-family:'Poppins', sans-serif;
     color: #F8FFE5;
     font-weight: bold;
     letter-spacing: 4px;;
     text-decoration:overline;
+    opacity: 0;
+    animation: fadeIn 3s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    
 }
+
+.mainHead--two{
+    font-size: 32px;
+    font-family:'Poppins', sans-serif;
+    color: #F8FFE5;
+    font-weight: bold;
+    letter-spacing: 4px;;
+    text-decoration:overline;
+    opacity: 0;
+    animation: fadeIn 3s;
+    -webkit-animation-delay: 2500mss;
+    animation-delay: 2500ms;
+    animation-fill-mode: forwards;
+}
+
+.mainHead--three{
+    font-size: 32px;
+    font-family:'Poppins', sans-serif;
+    color: #F8FFE5;
+    font-weight: bold;
+    letter-spacing: 4px;;
+    text-decoration:overline;
+    opacity: 0;
+    animation: fadeIn 3s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3ss;
+    animation-fill-mode: forwards;
+}
+
 
 .quotes{
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
     padding-top: 20px;
-    
+    animation: fadeIn 5s;
 }
 
+
 .face{
-    border: solid 5px #F8FFE5
+    border: solid 5px #F8FFE5;
+    opacity: 0;
+    animation: fadeIn 3s;
+    -webkit-animation-delay: 1500ms;
+    animation-delay: 1500ms;
+    animation-fill-mode: forwards;
 }
 
 
@@ -180,6 +238,12 @@ main{
     max-width: 400px;
     line-height: 30px;
     font-size: 22px;
+    opacity: 0;
+    animation: fadeIn 3s;
+    -webkit-animation-delay: 1800ms;
+    animation-delay: 1800ms;
+    animation-fill-mode: forwards;
+  
 }
 
 .myquote--ref{
@@ -190,6 +254,11 @@ main{
     line-height: 30px;
     font-size: 22px;
     font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 3s;
+    -webkit-animation-delay: 1800ms;
+    animation-delay: 1800ms;
+    animation-fill-mode: forwards;
 }
 
 /* body {

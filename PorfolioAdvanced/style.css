@@ -31,6 +31,7 @@ h1{
     color:#F8FFE5;
     font-weight: bold;  
     line-height: 20px;
+    margin-top: 10px;
 }
 h2{
     font-size: 36px;
@@ -46,11 +47,13 @@ h3{
     font-family:'Poppins', sans-serif;
     color:#F8FFE5;
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .mydesc{
     color:#d6dbc8;
     font-family: 'Poppins', sans-serif;
+    line-height: 15px;
 }
 
 .social-{
@@ -73,7 +76,7 @@ button:active{
     background-color: aliceblue;
 }
 /* end */
-.beghead, .nameplate{
+.beghead, .nameplate, .container2{
     max-width: 1200px;
     margin-left: auto;
     margin-right:auto;
@@ -101,8 +104,8 @@ button:active{
     flex:1;
     opacity: 0;
     animation: fadeIn 2s;
-    -webkit-animation-delay: 2600ms;
-    animation-delay: 2600ms;
+    -webkit-animation-delay: 3500ms;
+    animation-delay: 3500ms;
     animation-fill-mode: forwards;
 }
 
@@ -177,8 +180,8 @@ main{
     text-decoration:overline;
     opacity: 0;
     animation: fadeIn 3s;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 2200mss;
+    animation-delay: 2200ms;
     animation-fill-mode: forwards;
     
 }
@@ -192,8 +195,8 @@ main{
     text-decoration:overline;
     opacity: 0;
     animation: fadeIn 3s;
-    -webkit-animation-delay: 2500mss;
-    animation-delay: 2500ms;
+    -webkit-animation-delay: 2700mss;
+    animation-delay: 2700ms;
     animation-fill-mode: forwards;
 }
 
@@ -205,15 +208,17 @@ main{
     letter-spacing: 4px;;
     text-decoration:overline;
     opacity: 0;
-    animation: fadeIn 3s;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3ss;
+    animation: fadeIn 3200ms;
+    -webkit-animation-delay: 3200ms;
+    animation-delay: 3200ms;
     animation-fill-mode: forwards;
 }
 
 
 .quotes{
     display: flex;
+    width: auto;
+    height:100%;
     justify-content: center;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -223,6 +228,7 @@ main{
 
 .face{
     border: solid 5px #F8FFE5;
+    align-self: center;
     opacity: 0;
     animation: fadeIn 3s;
     -webkit-animation-delay: 1500ms;
@@ -230,6 +236,9 @@ main{
     animation-fill-mode: forwards;
 }
 
+.yolo{
+    align-self: center;
+}
 
 .myquote{
     color:#d6dbc8;
@@ -261,14 +270,30 @@ main{
     animation-fill-mode: forwards;
 }
 
-/* body {
+ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
 }
 
-    
-div {
-    width: 100vw;
+.bigboycontainer {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-} */
+  }
+  
+  header {
+    
+    flex-shrink: 0;
+    
+  }
+  
+  footer {
+    
+    flex-shrink: 0;
+    
+  }
+  
+  main {
+    flex: 1 0 auto;
+  }
